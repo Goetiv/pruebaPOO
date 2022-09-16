@@ -15,7 +15,7 @@ public class JAVA {
         
         int correlativo = 0;
   
-        System.out.println("Ingresando producto");
+        System.out.println("Ingresando Club");
         Registro_clubes_deportivos p = new Registro_clubes_deportivos();
         p.setNombre("Arsenal de Coquimbo");
         p.setLema("Cañones a los puertos");
@@ -25,7 +25,7 @@ public class JAVA {
         System.out.println("Creado producto: "+ p.getNombre());
         System.out.println(p.getCodigo());
         
-        System.out.println("Ingresando Equipo");
+        System.out.println("Ingresando Club");
         Registro_clubes_deportivos a = new Registro_clubes_deportivos();
         a.setNombre("Manquehue City");
         a.setLema("Vivir y Fuerza");
@@ -35,9 +35,9 @@ public class JAVA {
         System.out.println(a.getCodigo());
 
         
-        System.out.println("Creado producto: "+ a.getNombre());
+        System.out.println("Creado Club: "+ a.getNombre());
         
-        System.out.println("Ingresando producto");
+        System.out.println("Ingresando Club");
         Registro_clubes_deportivos b = new Registro_clubes_deportivos();
         b.setNombre("Los Cóndores Unidos");
         b.setLema("Desde lo alto al sol");
@@ -49,7 +49,7 @@ public class JAVA {
         System.out.println("Creado producto: "+ a.getNombre());
         
         
-        System.out.println("Creando Cliente");
+        System.out.println("Creando Usuario");
         Registro_Usuario u = new Registro_Usuario();
         u.setId(correlativo+1000);
         u.setUsuario("dcog");
@@ -60,9 +60,9 @@ public class JAVA {
         u.setNombre_completo("David Cogiolle");
         System.out.println(u.getFecha_nac());
         
-        System.out.println("Creado cliente: "+ u.getUsuario());
+        System.out.println("Creado usuario: "+ u.getUsuario());
         
-        System.out.println("Creando Solicitud");
+        System.out.println("Creando suscripcion");
         Suscripcion_Usuario s = new Suscripcion_Usuario();
         s.setNumero(++correlativo);
         s.setUsuario(u);
@@ -74,7 +74,7 @@ public class JAVA {
         s.agregarEquipo(p);
         s.agregarEquipo(b);
         s.agregarEquipo(p);
-        System.out.println("Solicitud Creada");
+        System.out.println("Suscripcion Creada");
         System.out.println(s.toString());
         
         
